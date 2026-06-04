@@ -28,16 +28,6 @@ My current work studies how to make model serving systems faster, more resource-
 - **SpecCache** explores speculative KV cache reuse for efficient RAG serving.
 - **LatCom** studies latent compression for efficient multi-agent collaboration.
 
-## Selected Projects
-
-**Cloud Security AI Capability Construction Platform Application**
-
-I led backend architecture and code design for a cloud-security AI platform, including high-throughput traffic database design, traffic capture preprocessing, distributed storage for large-scale query workloads, and backend API development. The platform was delivered to the traffic operation and maintenance system of Hefei City Cloud Data Center.
-
-**Intelligent Scientist Task Scheduling System**
-
-I designed and implemented the task scheduling module for an intelligent scientist platform, modeled the scheduling problem, developed scheduling algorithms, optimized system performance, and supported concurrent multi-task execution with reasonable resource allocation.
-
 ## Education
 
 - **Ph.D. Candidate**, University of Science and Technology of China, Institute of Advanced Technology and Future Network Laboratory, 2023.09 - Present

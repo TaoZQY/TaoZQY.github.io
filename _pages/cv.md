@@ -36,17 +36,6 @@ Research experience
 - Developed a branch-sequence deep reinforcement learning algorithm for tile-level bitrate allocation.
 - Publication: IEEE Transactions on Cognitive Communications and Networking, Early Access 2025, first author.
 
-Projects
-======
-**Cloud Security AI Capability Construction Platform Application**
-- Led backend architecture and code design, including high-throughput traffic database design, traffic capture preprocessing, distributed database design for large-scale query workloads, and backend API development.
-- Delivered the developed platform to the traffic operation and maintenance system of Hefei City Cloud Data Center.
-
-**Intelligent Scientist Task Scheduling System**
-- Designed and implemented the task scheduling module for an intelligent scientist platform.
-- Modeled the scheduling problem, developed efficient scheduling algorithms, optimized system performance, and ensured concurrent multi-task execution with reasonable resource allocation.
-- Collaborated with cross-functional teams to integrate the module, tune performance, and improve stability and user experience.
-
 Honors
 ======
 - National Scholarship, University of Science and Technology of China, 2025

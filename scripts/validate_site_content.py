@@ -9,6 +9,9 @@ def read(path):
 
 
 def main():
+    publication_text = "\n".join(
+        p.read_text(encoding="utf-8") for p in (ROOT / "_publications").glob("*.md")
+    )
     public_text = "\n".join(
         p.read_text(encoding="utf-8")
         for folder in ["_pages", "_publications", "_data"]
@@ -22,18 +25,34 @@ def main():
         "github handle is personalized": 'github           : "TaoZQY"' in read("_config.yml"),
         "profile avatar is updated": 'avatar           : "tao-zhang.jpg"' in read("_config.yml")
         and (ROOT / "images" / "tao-zhang.jpg").exists(),
-        "publication placeholders removed": "Paper Title Number" not in "\n".join(
-            p.read_text(encoding="utf-8") for p in (ROOT / "_publications").glob("*.md")
+        "publication placeholders removed": "Paper Title Number" not in publication_text,
+        "FAESR is listed": "FAESR" in publication_text,
+        "DisHelis is listed": "DisHelis" in publication_text,
+        "HAWK is listed": "HAWK" in publication_text,
+        "SpecCache is listed": "SpecCache" in publication_text,
+        "LatCom is listed": "LatCom" in publication_text,
+        "non-first-author papers are removed": all(
+            title not in publication_text
+            for title in ["PhOrch", "Reducing Cross-Pod", "TableQA"]
         ),
-        "FAESR is listed": "FAESR" in "\n".join(
-            p.read_text(encoding="utf-8") for p in (ROOT / "_publications").glob("*.md")
+        "publication entries use minimal metadata": all(
+            token not in publication_text for token in ["excerpt:", "citation:", "status:"]
         ),
-        "DisHelis is listed": "DisHelis" in "\n".join(
-            p.read_text(encoding="utf-8") for p in (ROOT / "_publications").glob("*.md")
+        "conference papers include oral or poster": all(
+            marker in publication_text
+            for marker in ["presentation: \"Oral\"", "presentation: \"Poster\""]
         ),
-        "LatCom is listed": "LatCom" in "\n".join(
-            p.read_text(encoding="utf-8") for p in (ROOT / "_publications").glob("*.md")
-        ),
+        "journal papers include SCI ranking": "venue_rank: \"SCI 一区\"" in publication_text
+        and "venue_rank: \"SCI 二区\"" in publication_text,
+        "co-first papers are marked": publication_text.count('author_role: "Co-first author"') >= 5,
+        "author role renders bold": "<strong>{{ post.author_role }}</strong>" in read(
+            "_includes/archive-single.html"
+        )
+        and "<strong>{{ post.author_role }}</strong>" in read("_includes/archive-single-cv.html"),
+        "project module is removed": "Selected Projects" not in public_text
+        and "\nProjects\n" not in read("_pages/cv.md")
+        and "Cloud Security AI Capability" not in public_text
+        and "Intelligent Scientist Task Scheduling" not in public_text,
         "served content has no template university": "GitHub University" not in public_text,
         "served content has no placeholder author": "Your Name" not in public_text,
     }

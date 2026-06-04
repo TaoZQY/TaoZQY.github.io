@@ -36,7 +36,15 @@
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
+    {% if post.venue %}
+      <p class="archive__item-excerpt" itemprop="description">
+        {% if post.author_role %}<strong>{{ post.author_role }}</strong>{% endif %}
+        {% if post.venue %} · <i>{{ post.venue }}</i>{% endif %}
+        {% if post.venue_rank %} · {{ post.venue_rank }}{% endif %}
+        {% if post.presentation %} · {{ post.presentation }}{% endif %}
+        · {{ post.date | default: "1900-01-01" | date: "%Y" }}
+      </p>
+    {% endif %}
     </li>
  </article>
 </div>

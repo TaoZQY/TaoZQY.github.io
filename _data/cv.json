@@ -25,32 +25,7 @@
       }
     ]
   },
-  "work": [
-    {
-      "name": "Cloud Security AI Capability Construction Platform Application",
-      "position": "Backend Architecture and Development Lead",
-      "startDate": "",
-      "endDate": "",
-      "summary": "Led backend architecture and code design for a cloud-security AI platform.",
-      "highlights": [
-        "Designed high-throughput traffic database and traffic capture preprocessing components.",
-        "Built distributed database support for large-scale query workloads and backend APIs.",
-        "Delivered the platform to the traffic operation and maintenance system of Hefei City Cloud Data Center."
-      ]
-    },
-    {
-      "name": "Intelligent Scientist Task Scheduling System",
-      "position": "Task Scheduling Module Developer",
-      "startDate": "",
-      "endDate": "",
-      "summary": "Designed and implemented the task scheduling module for an intelligent scientist platform.",
-      "highlights": [
-        "Modeled the scheduling problem and developed efficient scheduling algorithms.",
-        "Optimized system performance for concurrent multi-task execution and resource allocation.",
-        "Integrated the module with cross-functional teams and improved system stability."
-      ]
-    }
-  ],
+  "work": [],
   "education": [
     {
       "institution": "University of Science and Technology of China",
@@ -118,21 +93,56 @@
       "publisher": "IEEE Transactions on Cognitive Communications and Networking",
       "releaseDate": "2025",
       "website": "",
-      "summary": "First-author Early Access article on energy-aware super-resolution-assisted mobile panoramic video streaming."
+      "summary": "First author; SCI 一区."
     },
     {
       "name": "DisHelis: Optimizing Deployment of Disaggregated LLMs Inference Serving over Heterogeneous Environments via Hierarchical Max-Flow",
-      "publisher": "Manuscript under review",
+      "publisher": "IEEE Transactions on Cognitive Communications and Networking",
       "releaseDate": "2026",
       "website": "",
-      "summary": "First-author work on disaggregated LLM serving over heterogeneous GPU clusters and network conditions."
+      "summary": "First author; SCI 一区."
+    },
+    {
+      "name": "Multi-Timescale Joint Optimization of Task Scheduling, Instance Switching, and Resource Scaling for Disaggregated LLM Serving",
+      "publisher": "IEEE Transactions on Cognitive Communications and Networking",
+      "releaseDate": "2026",
+      "website": "",
+      "summary": "First author; SCI 二区."
+    },
+    {
+      "name": "HAWK: Head Importance-Aware Visual Token Pruning in Multimodal Models",
+      "publisher": "CVPR 2026",
+      "releaseDate": "2026",
+      "website": "",
+      "summary": "Co-first author; Poster."
+    },
+    {
+      "name": "SpecCache: Speculative KV Cache Reuse for Efficient RAG Serving",
+      "publisher": "ACL 2026",
+      "releaseDate": "2026",
+      "website": "",
+      "summary": "Co-first author; Oral."
+    },
+    {
+      "name": "SAVP: Scene-Aware Vision Token Pruning for Efficient Video Large Language Models",
+      "publisher": "EMNLP 2026",
+      "releaseDate": "2026",
+      "website": "",
+      "summary": "Co-first author; Poster."
+    },
+    {
+      "name": "GSTEP: Global Spatio-Temporal Density-Driven Visual Token Pruning for Efficient Video Large Language Models",
+      "publisher": "ACM Multimedia 2026",
+      "releaseDate": "2026",
+      "website": "",
+      "summary": "Co-first author; Poster."
     },
     {
       "name": "LatCom: Latent Compression for Efficient Multi-Agent Collaboration",
-      "publisher": "EMNLP 2026 submission",
+      "publisher": "EMNLP 2026",
       "releaseDate": "2026",
       "website": "",
-      "summary": "Co-first-author work on communication-efficient multi-agent collaboration."
+      "summary": "Co-first author; Poster."
     }
   ],
   "presentations": [],
