@@ -1,152 +1,141 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Tao Zhang",
+    "email": "zhangtaolqy@mail.ustc.edu.cn",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://taozqy.github.io",
+    "summary": "Ph.D. candidate at the University of Science and Technology of China working on efficient LLM inference serving, AI infrastructure, and multi-agent systems.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Hefei",
+      "countryCode": "CN",
+      "region": "Anhui"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
         "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "username": "0009-0009-5391-5048",
+        "url": "https://orcid.org/0009-0009-5391-5048"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "TaoZQY",
+        "url": "https://github.com/TaoZQY"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "name": "Cloud Security AI Capability Construction Platform Application",
+      "position": "Backend Architecture and Development Lead",
+      "startDate": "",
+      "endDate": "",
+      "summary": "Led backend architecture and code design for a cloud-security AI platform.",
+      "highlights": [
+        "Designed high-throughput traffic database and traffic capture preprocessing components.",
+        "Built distributed database support for large-scale query workloads and backend APIs.",
+        "Delivered the platform to the traffic operation and maintenance system of Hefei City Cloud Data Center."
+      ]
+    },
+    {
+      "name": "Intelligent Scientist Task Scheduling System",
+      "position": "Task Scheduling Module Developer",
+      "startDate": "",
+      "endDate": "",
+      "summary": "Designed and implemented the task scheduling module for an intelligent scientist platform.",
+      "highlights": [
+        "Modeled the scheduling problem and developed efficient scheduling algorithms.",
+        "Optimized system performance for concurrent multi-task execution and resource allocation.",
+        "Integrated the module with cross-functional teams and improved system stability."
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "University of Science and Technology of China",
+      "area": "Institute of Advanced Technology; Future Network Laboratory",
+      "studyType": "Ph.D. Candidate",
+      "startDate": "2023-09",
+      "endDate": "Present",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "institution": "Chongqing University of Posts and Telecommunications",
+      "area": "School of Communication and Information Engineering",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2019-09",
+      "endDate": "2023-06",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
+  "skills": [
+    {
+      "name": "Research",
+      "keywords": [
+        "LLM inference serving",
+        "AI infrastructure",
+        "multi-agent systems",
+        "distributed scheduling",
+        "multimodal model efficiency"
+      ]
+    },
+    {
+      "name": "Software Development",
+      "keywords": [
+        "Backend development",
+        "Frontend development",
+        "Android development",
+        "distributed databases",
+        "traffic data processing"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "CET-4 and CET-6; professional literature reading and academic writing"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Research Interests",
+      "keywords": [
+        "Efficient LLM inference serving",
+        "AI infrastructure",
+        "Disaggregated serving",
+        "Multi-agent collaboration",
+        "Visual token pruning"
+      ]
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "FAESR: Fine-Grained Rate Adaptation for Energy-Aware Super Resolution in Mobile Panoramic Video Streaming",
+      "publisher": "IEEE Transactions on Cognitive Communications and Networking",
+      "releaseDate": "2025",
+      "website": "",
+      "summary": "First-author Early Access article on energy-aware super-resolution-assisted mobile panoramic video streaming."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "DisHelis: Optimizing Deployment of Disaggregated LLMs Inference Serving over Heterogeneous Environments via Hierarchical Max-Flow",
+      "publisher": "Manuscript under review",
+      "releaseDate": "2026",
+      "website": "",
+      "summary": "First-author work on disaggregated LLM serving over heterogeneous GPU clusters and network conditions."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "LatCom: Latent Compression for Efficient Multi-Agent Collaboration",
+      "publisher": "EMNLP 2026 submission",
+      "releaseDate": "2026",
+      "website": "",
+      "summary": "Co-first-author work on communication-efficient multi-agent collaboration."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }

@@ -1,18 +1,10 @@
 # Authors
 
-Name Name:
-  name        : "Name Name"
-  uri         : "https://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+Tao Zhang:
+  name        : "Tao Zhang"
+  uri         : "https://taozqy.github.io"
+  email       : "zhangtaolqy@mail.ustc.edu.cn"
+  bio         : "Ph.D. candidate at USTC working on efficient LLM inference serving, AI infrastructure, and multi-agent systems."
+  avatar      : "tao-zhang.jpg"
+  github      : "TaoZQY"
+  orcid       : "https://orcid.org/0009-0009-5391-5048"
