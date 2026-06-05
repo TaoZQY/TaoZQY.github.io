@@ -55,9 +55,20 @@ def main():
         and "\nProjects\n" not in read("_pages/cv.md")
         and "Cloud Security AI Capability" not in public_text
         and "Intelligent Scientist Task Scheduling" not in public_text,
-        "minimal scholar homepage shell exists": 'class="minimal-scholar-home"' in about
+        "minimal scholar homepage shell exists": "minimal-scholar-home" in about
         and 'class="scholar-hero"' in about
         and 'class="scholar-pills"' in about,
+        "homepage uses full-width splash layout": "layout: splash" in about
+        and "author_profile: true" not in about,
+        "homepage has a portrait-led hero": 'class="scholar-portrait"' in about
+        and 'src="/images/tao-zhang.jpg"' in about
+        and 'class="scholar-hero-actions"' in about,
+        "homepage has visible academic stats": 'class="scholar-stats"' in about
+        and "First/co-first papers" in about
+        and "Oral paper" in about,
+        "minimal scholar wide styling is present": ".minimal-scholar-home--wide" in scholar_style
+        and ".scholar-portrait" in scholar_style
+        and ".scholar-stats" in scholar_style,
         "minimal scholar style is imported": '"layout/minimal_scholar"' in read("assets/css/main.scss"),
         "minimal scholar styling is present": ".minimal-scholar-home" in scholar_style
         and ".scholar-hero" in scholar_style
