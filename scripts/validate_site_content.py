@@ -18,6 +18,8 @@ def main():
         for p in (ROOT / folder).glob("**/*")
         if p.is_file() and p.suffix in {".md", ".html", ".json", ".yml", ".yaml"}
     )
+    about = read("_pages/about.md")
+    scholar_style = read("_sass/layout/_minimal_scholar.scss") if (ROOT / "_sass/layout/_minimal_scholar.scss").exists() else ""
     checks = {
         "about page is personalized": "Academic Pages is a ready-to-fork" not in read("_pages/about.md"),
         "cv page is personalized": "GitHub University" not in read("_pages/cv.md"),
@@ -53,6 +55,13 @@ def main():
         and "\nProjects\n" not in read("_pages/cv.md")
         and "Cloud Security AI Capability" not in public_text
         and "Intelligent Scientist Task Scheduling" not in public_text,
+        "minimal scholar homepage shell exists": 'class="minimal-scholar-home"' in about
+        and 'class="scholar-hero"' in about
+        and 'class="scholar-pills"' in about,
+        "minimal scholar style is imported": '"layout/minimal_scholar"' in read("assets/css/main.scss"),
+        "minimal scholar styling is present": ".minimal-scholar-home" in scholar_style
+        and ".scholar-hero" in scholar_style
+        and ".publication-meta" in scholar_style,
         "served content has no template university": "GitHub University" not in public_text,
         "served content has no placeholder author": "Your Name" not in public_text,
     }

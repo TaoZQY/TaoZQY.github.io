@@ -41,7 +41,7 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
-          <p>
+          <p class="publication-meta">
             {% if post.author_role %}<strong>{{ post.author_role }}</strong>{% else %}Publication{% endif %}
             {% if post.venue %} · <i>{{ post.venue }}</i>{% endif %}
             {% if post.venue_rank %} · {{ post.venue_rank }}{% endif %}
