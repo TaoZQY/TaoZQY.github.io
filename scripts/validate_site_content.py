@@ -19,6 +19,8 @@ def main():
         if p.is_file() and p.suffix in {".md", ".html", ".json", ".yml", ".yaml"}
     )
     about = read("_pages/about.md")
+    cv = read("_pages/cv.md")
+    cv_json = read("_data/cv.json")
     scholar_style = read("_sass/layout/_minimal_scholar.scss") if (ROOT / "_sass/layout/_minimal_scholar.scss").exists() else ""
     checks = {
         "about page is personalized": "Academic Pages is a ready-to-fork" not in read("_pages/about.md"),
@@ -73,6 +75,40 @@ def main():
         "minimal scholar styling is present": ".minimal-scholar-home" in scholar_style
         and ".scholar-hero" in scholar_style
         and ".publication-meta" in scholar_style,
+        "reference-inspired homepage sections exist": all(
+            marker in about
+            for marker in [
+                'id="news"',
+                'id="experience"',
+                'id="skills"',
+                'id="interests"',
+                'class="scholar-anchor-nav"',
+            ]
+        ),
+        "huawei internship is on homepage": all(
+            marker in about
+            for marker in [
+                "Huawei 2012 Laboratories",
+                "PTO optimization",
+                "dynamic and static graph construction",
+                "efficient computational graph construction and solving",
+                "scheduling",
+            ]
+        ),
+        "huawei internship is in cv": "Huawei 2012 Laboratories" in cv
+        and "PTO optimization" in cv
+        and "Huawei 2012 Laboratories" in cv_json
+        and "efficient computational graph construction and solving" in cv_json,
+        "reference-inspired styling exists": all(
+            marker in scholar_style
+            for marker in [
+                ".scholar-anchor-nav",
+                ".news-list",
+                ".experience-card",
+                ".skill-cloud",
+                ".interest-matrix",
+            ]
+        ),
         "served content has no template university": "GitHub University" not in public_text,
         "served content has no placeholder author": "Your Name" not in public_text,
     }

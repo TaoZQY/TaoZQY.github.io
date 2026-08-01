@@ -22,6 +22,13 @@ Research interests
 - Multi-agent systems and communication-efficient collaboration
 - Multimodal model efficiency and visual token pruning
 
+Work experience
+======
+**Research Intern, Huawei 2012 Laboratories**
+- Work on PTO optimization, focusing on dynamic and static graph construction on the Simpler side.
+- Improve efficient computational graph construction and solving for system-level optimization workflows.
+- Explore scheduling strategies for graph construction, graph solving, and high-throughput execution.
+
 Research experience
 ======
 **DisHelis: Serving Disaggregated Large Language Models over Heterogeneous Environments via Hierarchical Max-Flow**

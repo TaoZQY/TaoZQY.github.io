@@ -25,7 +25,21 @@
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "name": "Huawei 2012 Laboratories",
+      "position": "Research Intern",
+      "url": "",
+      "startDate": "2026",
+      "endDate": "Present",
+      "summary": "Working on PTO optimization for AI infrastructure systems.",
+      "highlights": [
+        "Focus on dynamic and static graph construction on the Simpler side.",
+        "Improve efficient computational graph construction and solving for system-level optimization workflows.",
+        "Explore scheduling strategies for graph construction, graph solving, and high-throughput execution."
+      ]
+    }
+  ],
   "education": [
     {
       "institution": "University of Science and Technology of China",
