@@ -22,6 +22,10 @@ def main():
     cv = read("_pages/cv.md")
     cv_json = read("_data/cv.json")
     navigation = read("_data/navigation.yml")
+    masthead = read("_includes/masthead.html")
+    navigation_style = read("_sass/layout/_navigation.scss")
+    main_js = read("assets/js/_main.js")
+    main_min_js = read("assets/js/main.min.js")
     head = read("_includes/head.html")
     scholar_style = read("_sass/layout/_minimal_scholar.scss") if (ROOT / "_sass/layout/_minimal_scholar.scss").exists() else ""
     homepage_anchors = [
@@ -78,7 +82,37 @@ def main():
         "top navigation uses homepage anchors": all(
             f"/#{anchor}" in navigation for anchor in homepage_anchors
         )
-        and "/cv/" in navigation,
+        and "/cv/" not in navigation
+        and 'title: "CV"' not in navigation,
+        "theme toggle is removed": "theme-toggle" not in masthead
+        and "theme-icon" not in masthead
+        and "toggle theme" not in masthead,
+        "theme switching scripts are removed": all(
+            token not in main_js
+            for token in [
+                "theme-toggle",
+                "theme-icon",
+                "toggleTheme",
+                "setTheme",
+                "prefers-color-scheme",
+                "localStorage",
+                "data-theme",
+                "plotlyDarkLayout",
+            ]
+        )
+        and all(
+            token not in main_min_js
+            for token in [
+                "theme-toggle",
+                "theme-icon",
+                "toggleTheme",
+                "setTheme",
+                "data-theme",
+                "plotlyDarkLayout",
+            ]
+        ),
+        "masthead nav font is smaller": "font-size: 0.86rem;" in navigation_style
+        and "line-height: 1.25;" in navigation_style,
         "homepage uses reference publication cards": all(
             marker in about
             for marker in [
