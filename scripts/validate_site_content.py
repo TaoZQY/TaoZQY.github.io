@@ -21,8 +21,19 @@ def main():
     about = read("_pages/about.md")
     cv = read("_pages/cv.md")
     cv_json = read("_data/cv.json")
+    navigation = read("_data/navigation.yml")
     head = read("_includes/head.html")
     scholar_style = read("_sass/layout/_minimal_scholar.scss") if (ROOT / "_sass/layout/_minimal_scholar.scss").exists() else ""
+    homepage_anchors = [
+        "about-me",
+        "news",
+        "education",
+        "internships",
+        "publications",
+        "skills",
+        "interests",
+        "honors",
+    ]
     checks = {
         "about page is personalized": "Academic Pages is a ready-to-fork" not in read("_pages/about.md"),
         "cv page is personalized": "GitHub University" not in read("_pages/cv.md"),
@@ -58,34 +69,44 @@ def main():
         and "\nProjects\n" not in read("_pages/cv.md")
         and "Cloud Security AI Capability" not in public_text
         and "Intelligent Scientist Task Scheduling" not in public_text,
-        "minimal scholar homepage shell exists": "minimal-scholar-home" in about
-        and 'class="scholar-hero"' in about
-        and 'class="scholar-pills"' in about,
-        "homepage uses full-width splash layout": "layout: splash" in about
-        and "author_profile: true" not in about,
-        "homepage has a portrait-led hero": 'class="scholar-portrait"' in about
-        and 'src="/images/tao-zhang.jpg"' in about
-        and 'class="scholar-hero-actions"' in about,
-        "homepage has visible academic stats": 'class="scholar-stats"' in about
-        and "First/co-first papers" in about
-        and "Oral paper" in about,
-        "minimal scholar wide styling is present": ".minimal-scholar-home--wide" in scholar_style
-        and ".scholar-portrait" in scholar_style
-        and ".scholar-stats" in scholar_style,
-        "minimal scholar style is imported": '"layout/minimal_scholar"' in read("assets/css/main.scss"),
-        "minimal scholar styling is present": ".minimal-scholar-home" in scholar_style
-        and ".scholar-hero" in scholar_style
-        and ".publication-meta" in scholar_style,
-        "reference-inspired homepage sections exist": all(
+        "homepage uses reference academic profile layout": "layout: splash" not in about
+        and "author_profile: true" in about
+        and 'class="academic-home"' in about,
+        "homepage keeps reference-style anchors": all(
+            f"id='{anchor}'" in about or f'id="{anchor}"' in about for anchor in homepage_anchors
+        ),
+        "top navigation uses homepage anchors": all(
+            f"/#{anchor}" in navigation for anchor in homepage_anchors
+        )
+        and "/cv/" in navigation,
+        "homepage uses reference publication cards": all(
             marker in about
             for marker in [
-                'id="news"',
-                'id="experience"',
-                'id="skills"',
-                'id="interests"',
-                'class="scholar-anchor-nav"',
+                'class="pub-list"',
+                'class="pub-item"',
+                'class="pub-title"',
+                'class="pub-meta"',
+                'class="pub-badge',
             ]
         ),
+        "homepage publication cards keep requested metadata only": all(
+            marker in about
+            for marker in [
+                "First author",
+                "Co-first author",
+                "SCI 一区",
+                "SCI 二区",
+                "Oral",
+                "Poster",
+            ]
+        )
+        and "Abstract" not in about
+        and "Code" not in about
+        and "PDF" not in about,
+        "minimal scholar style is imported": '"layout/minimal_scholar"' in read("assets/css/main.scss"),
+        "minimal scholar hero shell is removed": "minimal-scholar-home" not in about
+        and "scholar-hero" not in about
+        and "scholar-stats" not in about,
         "huawei internship is on homepage": all(
             marker in about
             for marker in [
@@ -96,18 +117,19 @@ def main():
                 "scheduling",
             ]
         ),
+        "huawei icon exists": (ROOT / "images" / "company-icons" / "huawei.svg").exists(),
         "huawei internship is in cv": "Huawei 2012 Laboratories" in cv
         and "PTO optimization" in cv
         and "Huawei 2012 Laboratories" in cv_json
         and "efficient computational graph construction and solving" in cv_json,
-        "reference-inspired styling exists": all(
+        "reference-style homepage styling exists": all(
             marker in scholar_style
             for marker in [
-                ".scholar-anchor-nav",
-                ".news-list",
-                ".experience-card",
-                ".skill-cloud",
-                ".interest-matrix",
+                ".academic-home",
+                ".about-tags",
+                ".internship-card",
+                ".pub-item",
+                ".pub-badge",
             ]
         ),
         "anchor sections avoid fixed masthead overlap": "scroll-margin-top" in scholar_style,
