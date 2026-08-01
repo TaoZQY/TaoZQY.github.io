@@ -21,6 +21,7 @@ def main():
     about = read("_pages/about.md")
     cv = read("_pages/cv.md")
     cv_json = read("_data/cv.json")
+    head = read("_includes/head.html")
     scholar_style = read("_sass/layout/_minimal_scholar.scss") if (ROOT / "_sass/layout/_minimal_scholar.scss").exists() else ""
     checks = {
         "about page is personalized": "Academic Pages is a ready-to-fork" not in read("_pages/about.md"),
@@ -110,6 +111,7 @@ def main():
             ]
         ),
         "anchor sections avoid fixed masthead overlap": "scroll-margin-top" in scholar_style,
+        "main css uses cache buster": "/assets/css/main.css?v=" in head,
         "served content has no template university": "GitHub University" not in public_text,
         "served content has no placeholder author": "Your Name" not in public_text,
     }
