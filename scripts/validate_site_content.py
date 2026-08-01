@@ -109,6 +109,7 @@ def main():
                 ".interest-matrix",
             ]
         ),
+        "anchor sections avoid fixed masthead overlap": "scroll-margin-top" in scholar_style,
         "served content has no template university": "GitHub University" not in public_text,
         "served content has no placeholder author": "Your Name" not in public_text,
     }
