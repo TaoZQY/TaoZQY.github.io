@@ -132,9 +132,38 @@ def main():
                 ".pub-badge",
             ]
         ),
-        "homepage section headings use icons": about.count("academic-heading-icon") >= 8
-        and all(
+        "homepage section headings use reference icons": all(
             marker in about
+            for marker in [
+                "# About Me 🚀",
+                "# News 📰",
+                "# Education 🎓",
+                "# Internship Experience 💼",
+                "# Publications 📚",
+                "# Skills 🧠",
+                "# Research Interests 🔍",
+                "# Honors and Awards 🏆",
+            ]
+        )
+        and "academic-heading-icon" not in about
+        and "fa-user-graduate" not in about,
+        "homepage copy is concise": "especially the systems problems that appear" not in about
+        and "high-throughput AI infrastructure workflows" not in about
+        and "Communication-efficient collaboration, latent compression" not in about,
+        "reference icon box styling is removed": ".academic-heading-icon" not in scholar_style
+        and "display: inline-flex !important" not in scholar_style,
+        "reference-inspired color polish exists": all(
+            marker in scholar_style
+            for marker in [
+                ".about-tags span:nth-child",
+                "li::before",
+                ".pub-item::before",
+                "div::before",
+            ]
+        ),
+        "homepage old boxed section icons are removed": "academic-heading-icon" not in about,
+        "legacy fontawesome heading icons are removed": all(
+            marker not in about
             for marker in [
                 "fa-user-graduate",
                 "fa-newspaper",
@@ -144,17 +173,6 @@ def main():
                 "fa-code",
                 "fa-search",
                 "fa-award",
-            ]
-        ),
-        "reference-inspired color polish exists": all(
-            marker in scholar_style
-            for marker in [
-                ".academic-heading-icon",
-                "h1::after",
-                ".about-tags span:nth-child",
-                "li::before",
-                ".pub-item::before",
-                "div::before",
             ]
         ),
         "anchor sections avoid fixed masthead overlap": "scroll-margin-top" in scholar_style,

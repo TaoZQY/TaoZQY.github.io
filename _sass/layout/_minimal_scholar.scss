@@ -13,7 +13,6 @@
   --academic-blue-soft: rgba(49, 87, 164, 0.09);
   --academic-rust-soft: rgba(164, 81, 53, 0.1);
   --academic-gold-soft: rgba(154, 107, 22, 0.11);
-  --academic-plum-soft: rgba(122, 78, 141, 0.1);
 
   color: var(--academic-ink);
 
@@ -34,23 +33,12 @@
   }
 
   h1 {
-    display: flex;
-    gap: 0.68rem;
-    align-items: center;
     margin-top: 1.85rem;
     padding-top: 1.15rem;
     border-top: 1px solid var(--academic-line);
     color: var(--academic-ink);
     font-size: 1.45rem;
     line-height: 1.25;
-  }
-
-  h1::after {
-    content: "";
-    flex: 1 1 auto;
-    height: 1px;
-    min-width: 2rem;
-    background: linear-gradient(90deg, rgba(15, 118, 110, 0.32), rgba(49, 87, 164, 0.08));
   }
 
   .anchor:first-of-type + h1 {
@@ -67,56 +55,6 @@
   a {
     text-decoration: none;
   }
-}
-
-.academic-heading-icon {
-  display: inline-flex !important;
-  flex: 0 0 auto;
-  align-items: center;
-  justify-content: center;
-  width: 2.05rem;
-  height: 2.05rem;
-  border: 1px solid var(--academic-line);
-  border-radius: 8px;
-  background: var(--academic-green-soft);
-  color: var(--academic-green);
-  font-size: 0.88rem;
-  line-height: 1;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
-  vertical-align: middle;
-}
-
-.academic-heading-icon::before {
-  display: block;
-  line-height: 1;
-}
-
-.academic-heading-icon--about,
-.academic-heading-icon--publications {
-  background: var(--academic-green-soft);
-  color: var(--academic-green);
-}
-
-.academic-heading-icon--news,
-.academic-heading-icon--honors {
-  background: var(--academic-rust-soft);
-  color: var(--academic-rust);
-}
-
-.academic-heading-icon--education,
-.academic-heading-icon--internships {
-  background: var(--academic-blue-soft);
-  color: var(--academic-blue);
-}
-
-.academic-heading-icon--skills {
-  background: var(--academic-plum-soft);
-  color: var(--academic-plum);
-}
-
-.academic-heading-icon--interests {
-  background: var(--academic-gold-soft);
-  color: var(--academic-gold);
 }
 
 .about-tags,

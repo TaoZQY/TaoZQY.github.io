@@ -12,11 +12,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-# <i class="fas fa-user-graduate academic-heading-icon academic-heading-icon--about" aria-hidden="true"></i> About Me
+# About Me 🚀
 
-I am **Tao Zhang**, a Ph.D. candidate at the **University of Science and Technology of China (USTC)**, working with the Future Network Laboratory. My research focuses on **efficient large language model inference serving**, **AI infrastructure**, and **multi-agent systems**, especially the systems problems that appear when modern AI workloads need to run fast, cheaply, and reliably on heterogeneous GPU clusters.
+I am **Tao Zhang**, a Ph.D. candidate at the **University of Science and Technology of China (USTC)**, working with the Future Network Laboratory. My research focuses on **efficient LLM inference serving**, **AI infrastructure**, and **multi-agent systems**.
 
-My recent work studies disaggregated LLM serving, KV-cache reuse for RAG, multimodal serving efficiency, and communication-efficient multi-agent collaboration. I am also a research intern at **Huawei 2012 Laboratories**, where I work on **PTO optimization**, focusing on dynamic and static graph construction on the Simpler side, efficient computational graph construction and solving, and scheduling.
+I am currently a research intern at **Huawei 2012 Laboratories**, working on **PTO optimization** for Simpler-side graph construction, graph solving, and scheduling.
 
 <div class="about-tags" aria-label="Research keywords">
   <span>LLM Serving</span>
@@ -30,19 +30,19 @@ My recent work studies disaggregated LLM serving, KV-cache reuse for RAG, multim
 
 <span class='anchor' id='news'></span>
 
-# <i class="fas fa-newspaper academic-heading-icon academic-heading-icon--news" aria-hidden="true"></i> News
+# News 📰
 
 <ul class="news-list">
-  <li><time>2026</time><span>Joined <strong>Huawei 2012 Laboratories</strong> as a research intern working on PTO optimization for Simpler-side graph construction, graph solving, and scheduling.</span></li>
-  <li><time>2026</time><span><strong>SpecCache</strong> was accepted by ACL 2026 as an <strong>Oral</strong> paper.</span></li>
-  <li><time>2026</time><span><strong>HAWK</strong> was accepted by CVPR 2026 as a <strong>Poster</strong> paper.</span></li>
-  <li><time>2026</time><span><strong>SAVP</strong> and <strong>LatCom</strong> were accepted by EMNLP 2026 as <strong>Poster</strong> papers; <strong>GSTEP</strong> was accepted by ACM Multimedia 2026 as a <strong>Poster</strong> paper.</span></li>
-  <li><time>2025</time><span><strong>FAESR</strong> was published in IEEE Transactions on Cognitive Communications and Networking.</span></li>
+  <li><time>2026</time><span>Joined <strong>Huawei 2012 Laboratories</strong> as a research intern on PTO optimization.</span></li>
+  <li><time>2026</time><span><strong>SpecCache</strong> accepted by ACL 2026 as an <strong>Oral</strong> paper.</span></li>
+  <li><time>2026</time><span><strong>HAWK</strong> accepted by CVPR 2026 as a <strong>Poster</strong> paper.</span></li>
+  <li><time>2026</time><span><strong>SAVP</strong>, <strong>LatCom</strong>, and <strong>GSTEP</strong> accepted by EMNLP 2026 and ACM Multimedia 2026.</span></li>
+  <li><time>2025</time><span><strong>FAESR</strong> published in IEEE TCCN.</span></li>
 </ul>
 
 <span class='anchor' id='education'></span>
 
-# <i class="fas fa-graduation-cap academic-heading-icon academic-heading-icon--education" aria-hidden="true"></i> Education
+# Education 🎓
 
 <div class="timeline-list">
   <div class="timeline-item">
@@ -63,7 +63,7 @@ My recent work studies disaggregated LLM serving, KV-cache reuse for RAG, multim
 
 <span class='anchor' id='internships'></span>
 
-# <i class="fas fa-briefcase academic-heading-icon academic-heading-icon--internships" aria-hidden="true"></i> Internship Experience
+# Internship Experience 💼
 
 <div class="internship-list">
   <div class="internship-card">
@@ -79,8 +79,8 @@ My recent work studies disaggregated LLM serving, KV-cache reuse for RAG, multim
         <div class="internship-time">2026 - Present</div>
       </div>
       <p>
-        Working on PTO optimization with a focus on dynamic and static graph construction on the Simpler side,
-        efficient computational graph construction and solving, and scheduling for high-throughput AI infrastructure workflows.
+        Focus on PTO optimization for dynamic and static graph construction on the Simpler side,
+        efficient computational graph construction and solving, and scheduling.
       </p>
       <div class="internship-tags" aria-label="Huawei internship keywords">
         <span>PTO Optimization</span>
@@ -94,7 +94,7 @@ My recent work studies disaggregated LLM serving, KV-cache reuse for RAG, multim
 
 <span class='anchor' id='publications'></span>
 
-# <i class="fas fa-book-open academic-heading-icon academic-heading-icon--publications" aria-hidden="true"></i> Publications
+# Publications 📚
 
 <div class="pub-list">
   <a class="pub-item" href="/publication/dishelis">
@@ -180,7 +180,7 @@ My recent work studies disaggregated LLM serving, KV-cache reuse for RAG, multim
 
 <span class='anchor' id='skills'></span>
 
-# <i class="fas fa-code academic-heading-icon academic-heading-icon--skills" aria-hidden="true"></i> Skills
+# Skills 🧠
 
 <div class="about-tags about-tags--skills" aria-label="Technical skills">
   <span>LLM inference serving</span>
@@ -197,30 +197,30 @@ My recent work studies disaggregated LLM serving, KV-cache reuse for RAG, multim
 
 <span class='anchor' id='interests'></span>
 
-# <i class="fas fa-search academic-heading-icon academic-heading-icon--interests" aria-hidden="true"></i> Research Interests
+# Research Interests 🔍
 
 <div class="interest-grid">
   <div>
     <strong>Efficient LLM Inference Serving</strong>
-    <span>Resource allocation, cache reuse, deployment planning, and online scheduling for high-throughput model serving.</span>
+    <span>Scheduling, cache reuse, and deployment planning for scalable model serving.</span>
   </div>
   <div>
     <strong>AI Infrastructure</strong>
-    <span>Systems support for heterogeneous GPU clusters, computational graph construction, graph solving, and execution scheduling.</span>
+    <span>Graph construction, graph solving, and execution scheduling on heterogeneous clusters.</span>
   </div>
   <div>
     <strong>Multi-Agent Systems</strong>
-    <span>Communication-efficient collaboration, latent compression, and system-aware coordination for agent workloads.</span>
+    <span>Efficient collaboration and system-aware coordination for agent workloads.</span>
   </div>
   <div>
     <strong>Multimodal Efficiency</strong>
-    <span>Visual token pruning and serving optimization for multimodal generation and understanding.</span>
+    <span>Visual token pruning and serving optimization for multimodal workloads.</span>
   </div>
 </div>
 
 <span class='anchor' id='honors'></span>
 
-# <i class="fas fa-award academic-heading-icon academic-heading-icon--honors" aria-hidden="true"></i> Honors and Awards
+# Honors and Awards 🏆
 
 <div class="timeline-list">
   <div class="timeline-item">
