@@ -40,7 +40,6 @@ def main():
         "education",
         "internships",
         "publications",
-        "skills",
         "interests",
         "honors",
     ]
@@ -89,7 +88,15 @@ def main():
             f"/#{anchor}" in navigation for anchor in homepage_anchors
         )
         and "/cv/" not in navigation
-        and 'title: "CV"' not in navigation,
+        and 'title: "CV"' not in navigation
+        and "/#skills" not in navigation
+        and 'title: "Skills"' not in navigation,
+        "homepage skills module is removed": "id='skills'" not in about
+        and 'id="skills"' not in about
+        and "# Skills" not in about
+        and "Technical skills" not in about
+        and "about-tags--skills" not in about
+        and ".about-tags--skills" not in scholar_style,
         "theme toggle is removed": "theme-toggle" not in masthead
         and "theme-icon" not in masthead
         and "toggle theme" not in masthead,
@@ -201,7 +208,6 @@ def main():
                 "# Education 🎓",
                 "# Internship Experience 💼",
                 "# Publications 📚",
-                "# Skills 🧠",
                 "# Research Interests 🔍",
                 "# Honors and Awards 🏆",
             ]

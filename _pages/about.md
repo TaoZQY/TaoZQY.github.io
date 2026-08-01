@@ -175,23 +175,6 @@ I am currently a research intern at **Huawei 2012 Laboratories**, working on **P
   </a>
 </div>
 
-<span class='anchor' id='skills'></span>
-
-# Skills 🧠
-
-<div class="about-tags about-tags--skills" aria-label="Technical skills">
-  <span>LLM inference serving</span>
-  <span>AI infrastructure</span>
-  <span>Disaggregated serving</span>
-  <span>Resource scheduling</span>
-  <span>KV-cache optimization</span>
-  <span>PTO optimization</span>
-  <span>Computational graph construction</span>
-  <span>Graph solving</span>
-  <span>Multi-agent systems</span>
-  <span>Multimodal model efficiency</span>
-</div>
-
 <span class='anchor' id='interests'></span>
 
 # Research Interests 🔍
