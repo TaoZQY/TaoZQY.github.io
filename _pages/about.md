@@ -24,8 +24,6 @@ I am currently a research intern at **Huawei 2012 Laboratories**, working on **P
   <span>Disaggregated Inference</span>
   <span>KV Cache Reuse</span>
   <span>Multi-Agent Systems</span>
-  <span>Multimodal Efficiency</span>
-  <span>PTO Optimization</span>
 </div>
 
 <span class='anchor' id='news'></span>
@@ -86,7 +84,6 @@ I am currently a research intern at **Huawei 2012 Laboratories**, working on **P
         <span>PTO Optimization</span>
         <span>Simpler-side Graph Construction</span>
         <span>Computational Graph Solving</span>
-        <span>Scheduling</span>
       </div>
     </div>
   </div>
@@ -98,7 +95,7 @@ I am currently a research intern at **Huawei 2012 Laboratories**, working on **P
 
 <div class="pub-list">
   <a class="pub-item" href="/publication/dishelis">
-    <div class="pub-title">DisHelis</div>
+    <div class="pub-title">DisHelis: Optimizing Deployment of Disaggregated LLMs Inference Serving over Heterogeneous Environments via Hierarchical Max-Flow</div>
     <div class="pub-authors"><strong>Tao Zhang</strong> · First author</div>
     <div class="pub-meta">
       <span class="pub-badge">IEEE TCCN</span>
@@ -108,7 +105,7 @@ I am currently a research intern at **Huawei 2012 Laboratories**, working on **P
   </a>
 
   <a class="pub-item" href="/publication/speccache">
-    <div class="pub-title">SpecCache</div>
+    <div class="pub-title">SpecCache: Speculative KV Cache Reuse for Efficient RAG Serving</div>
     <div class="pub-authors"><strong>Tao Zhang</strong> · Co-first author</div>
     <div class="pub-meta">
       <span class="pub-badge">ACL 2026</span>
@@ -118,7 +115,7 @@ I am currently a research intern at **Huawei 2012 Laboratories**, working on **P
   </a>
 
   <a class="pub-item" href="/publication/hawk">
-    <div class="pub-title">HAWK</div>
+    <div class="pub-title">HAWK: Head Importance-Aware Visual Token Pruning in Multimodal Models</div>
     <div class="pub-authors"><strong>Tao Zhang</strong> · Co-first author</div>
     <div class="pub-meta">
       <span class="pub-badge">CVPR 2026</span>
@@ -128,7 +125,7 @@ I am currently a research intern at **Huawei 2012 Laboratories**, working on **P
   </a>
 
   <a class="pub-item" href="/publication/savp">
-    <div class="pub-title">SAVP</div>
+    <div class="pub-title">SAVP: Scene-Aware Vision Token Pruning for Efficient Video Large Language Models</div>
     <div class="pub-authors"><strong>Tao Zhang</strong> · Co-first author</div>
     <div class="pub-meta">
       <span class="pub-badge">EMNLP 2026</span>
@@ -138,7 +135,7 @@ I am currently a research intern at **Huawei 2012 Laboratories**, working on **P
   </a>
 
   <a class="pub-item" href="/publication/gstep">
-    <div class="pub-title">GSTEP</div>
+    <div class="pub-title">GSTEP: Global Spatio-Temporal Density-Driven Visual Token Pruning for Efficient Video Large Language Models</div>
     <div class="pub-authors"><strong>Tao Zhang</strong> · Co-first author</div>
     <div class="pub-meta">
       <span class="pub-badge">ACM Multimedia 2026</span>
@@ -148,7 +145,7 @@ I am currently a research intern at **Huawei 2012 Laboratories**, working on **P
   </a>
 
   <a class="pub-item" href="/publication/latcom">
-    <div class="pub-title">LatCom</div>
+    <div class="pub-title">LatCom: Latent Compression for Efficient Multi-Agent Collaboration</div>
     <div class="pub-authors"><strong>Tao Zhang</strong> · Co-first author</div>
     <div class="pub-meta">
       <span class="pub-badge">EMNLP 2026</span>
@@ -168,7 +165,7 @@ I am currently a research intern at **Huawei 2012 Laboratories**, working on **P
   </a>
 
   <a class="pub-item" href="/publication/faesr">
-    <div class="pub-title">FAESR</div>
+    <div class="pub-title">FAESR: Fine-Grained Rate Adaptation for Energy-Aware Super Resolution in Mobile Panoramic Video Streaming</div>
     <div class="pub-authors"><strong>Tao Zhang</strong> · First author</div>
     <div class="pub-meta">
       <span class="pub-badge">IEEE TCCN</span>

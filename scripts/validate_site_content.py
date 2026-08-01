@@ -28,6 +28,12 @@ def main():
     main_min_js = read("assets/js/main.min.js")
     head = read("_includes/head.html")
     scholar_style = read("_sass/layout/_minimal_scholar.scss") if (ROOT / "_sass/layout/_minimal_scholar.scss").exists() else ""
+    research_tag_block = about.split(
+        '<div class="about-tags" aria-label="Research keywords">', 1
+    )[1].split("</div>", 1)[0]
+    internship_tag_block = about.split(
+        '<div class="internship-tags" aria-label="Huawei internship keywords">', 1
+    )[1].split("</div>", 1)[0]
     homepage_anchors = [
         "about-me",
         "news",
@@ -137,6 +143,27 @@ def main():
         and "Abstract" not in about
         and "Code" not in about
         and "PDF" not in about,
+        "homepage publication cards show full titles": all(
+            title in about
+            for title in [
+                "DisHelis: Optimizing Deployment of Disaggregated LLMs Inference Serving",
+                "SpecCache: Speculative KV Cache Reuse for Efficient RAG Serving",
+                "HAWK: Head Importance-Aware Visual Token Pruning in Multimodal Models",
+                "SAVP: Scene-Aware Vision Token Pruning for Efficient Video Large Language Models",
+                "GSTEP: Global Spatio-Temporal Density-Driven Visual Token Pruning",
+                "LatCom: Latent Compression for Efficient Multi-Agent Collaboration",
+                "FAESR: Fine-Grained Rate Adaptation for Energy-Aware Super Resolution",
+            ]
+        ),
+        "requested about tags are removed": all(
+            tag not in research_tag_block
+            for tag in [
+                "<span>Multimodal Efficiency</span>",
+                "<span>PTO Optimization</span>",
+            ]
+        ),
+        "requested internship tag is removed": "<span>Scheduling</span>" not in internship_tag_block,
+        "publication title font is reduced": "font-size: 0.9rem;" in scholar_style,
         "minimal scholar style is imported": '"layout/minimal_scholar"' in read("assets/css/main.scss"),
         "minimal scholar hero shell is removed": "minimal-scholar-home" not in about
         and "scholar-hero" not in about
