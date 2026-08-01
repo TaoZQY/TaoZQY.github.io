@@ -347,6 +347,15 @@
   line-height: 1.55;
 }
 
+.author__urls .author__desktop {
+  white-space: normal;
+  line-height: 1.35;
+}
+
+.author__urls li {
+  overflow-wrap: anywhere;
+}
+
 @media (max-width: 760px) {
   .news-list li,
   .timeline-item,
