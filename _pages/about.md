@@ -12,7 +12,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-# About Me
+# <i class="fas fa-user-graduate academic-heading-icon academic-heading-icon--about" aria-hidden="true"></i> About Me
 
 I am **Tao Zhang**, a Ph.D. candidate at the **University of Science and Technology of China (USTC)**, working with the Future Network Laboratory. My research focuses on **efficient large language model inference serving**, **AI infrastructure**, and **multi-agent systems**, especially the systems problems that appear when modern AI workloads need to run fast, cheaply, and reliably on heterogeneous GPU clusters.
 
@@ -30,7 +30,7 @@ My recent work studies disaggregated LLM serving, KV-cache reuse for RAG, multim
 
 <span class='anchor' id='news'></span>
 
-# News
+# <i class="fas fa-newspaper academic-heading-icon academic-heading-icon--news" aria-hidden="true"></i> News
 
 <ul class="news-list">
   <li><time>2026</time><span>Joined <strong>Huawei 2012 Laboratories</strong> as a research intern working on PTO optimization for Simpler-side graph construction, graph solving, and scheduling.</span></li>
@@ -42,7 +42,7 @@ My recent work studies disaggregated LLM serving, KV-cache reuse for RAG, multim
 
 <span class='anchor' id='education'></span>
 
-# Education
+# <i class="fas fa-graduation-cap academic-heading-icon academic-heading-icon--education" aria-hidden="true"></i> Education
 
 <div class="timeline-list">
   <div class="timeline-item">
@@ -63,7 +63,7 @@ My recent work studies disaggregated LLM serving, KV-cache reuse for RAG, multim
 
 <span class='anchor' id='internships'></span>
 
-# Internship Experience
+# <i class="fas fa-briefcase academic-heading-icon academic-heading-icon--internships" aria-hidden="true"></i> Internship Experience
 
 <div class="internship-list">
   <div class="internship-card">
@@ -94,7 +94,7 @@ My recent work studies disaggregated LLM serving, KV-cache reuse for RAG, multim
 
 <span class='anchor' id='publications'></span>
 
-# Publications
+# <i class="fas fa-book-open academic-heading-icon academic-heading-icon--publications" aria-hidden="true"></i> Publications
 
 <div class="pub-list">
   <a class="pub-item" href="/publication/dishelis">
@@ -180,7 +180,7 @@ My recent work studies disaggregated LLM serving, KV-cache reuse for RAG, multim
 
 <span class='anchor' id='skills'></span>
 
-# Skills
+# <i class="fas fa-code academic-heading-icon academic-heading-icon--skills" aria-hidden="true"></i> Skills
 
 <div class="about-tags about-tags--skills" aria-label="Technical skills">
   <span>LLM inference serving</span>
@@ -197,7 +197,7 @@ My recent work studies disaggregated LLM serving, KV-cache reuse for RAG, multim
 
 <span class='anchor' id='interests'></span>
 
-# Research Interests
+# <i class="fas fa-search academic-heading-icon academic-heading-icon--interests" aria-hidden="true"></i> Research Interests
 
 <div class="interest-grid">
   <div>
@@ -220,7 +220,7 @@ My recent work studies disaggregated LLM serving, KV-cache reuse for RAG, multim
 
 <span class='anchor' id='honors'></span>
 
-# Honors and Awards
+# <i class="fas fa-award academic-heading-icon academic-heading-icon--honors" aria-hidden="true"></i> Honors and Awards
 
 <div class="timeline-list">
   <div class="timeline-item">

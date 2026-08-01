@@ -132,6 +132,31 @@ def main():
                 ".pub-badge",
             ]
         ),
+        "homepage section headings use icons": about.count("academic-heading-icon") >= 8
+        and all(
+            marker in about
+            for marker in [
+                "fa-user-graduate",
+                "fa-newspaper",
+                "fa-graduation-cap",
+                "fa-briefcase",
+                "fa-book-open",
+                "fa-code",
+                "fa-search",
+                "fa-award",
+            ]
+        ),
+        "reference-inspired color polish exists": all(
+            marker in scholar_style
+            for marker in [
+                ".academic-heading-icon",
+                "h1::after",
+                ".about-tags span:nth-child",
+                "li::before",
+                ".pub-item::before",
+                "div::before",
+            ]
+        ),
         "anchor sections avoid fixed masthead overlap": "scroll-margin-top" in scholar_style,
         "main css uses cache buster": "/assets/css/main.css?v=" in head,
         "served content has no template university": "GitHub University" not in public_text,

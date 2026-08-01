@@ -8,6 +8,12 @@
   --academic-blue: #3157a4;
   --academic-rust: #a45135;
   --academic-gold: #9a6b16;
+  --academic-plum: #7a4e8d;
+  --academic-green-soft: rgba(15, 118, 110, 0.09);
+  --academic-blue-soft: rgba(49, 87, 164, 0.09);
+  --academic-rust-soft: rgba(164, 81, 53, 0.1);
+  --academic-gold-soft: rgba(154, 107, 22, 0.11);
+  --academic-plum-soft: rgba(122, 78, 141, 0.1);
 
   color: var(--academic-ink);
 
@@ -28,12 +34,23 @@
   }
 
   h1 {
+    display: flex;
+    gap: 0.68rem;
+    align-items: center;
     margin-top: 1.85rem;
     padding-top: 1.15rem;
     border-top: 1px solid var(--academic-line);
     color: var(--academic-ink);
     font-size: 1.45rem;
     line-height: 1.25;
+  }
+
+  h1::after {
+    content: "";
+    flex: 1 1 auto;
+    height: 1px;
+    min-width: 2rem;
+    background: linear-gradient(90deg, rgba(15, 118, 110, 0.32), rgba(49, 87, 164, 0.08));
   }
 
   .anchor:first-of-type + h1 {
@@ -50,6 +67,50 @@
   a {
     text-decoration: none;
   }
+}
+
+.academic-heading-icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 2.05rem;
+  height: 2.05rem;
+  border: 1px solid var(--academic-line);
+  border-radius: 8px;
+  background: var(--academic-green-soft);
+  color: var(--academic-green);
+  font-size: 0.88rem;
+  line-height: 1;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.academic-heading-icon--about,
+.academic-heading-icon--publications {
+  background: var(--academic-green-soft);
+  color: var(--academic-green);
+}
+
+.academic-heading-icon--news,
+.academic-heading-icon--honors {
+  background: var(--academic-rust-soft);
+  color: var(--academic-rust);
+}
+
+.academic-heading-icon--education,
+.academic-heading-icon--internships {
+  background: var(--academic-blue-soft);
+  color: var(--academic-blue);
+}
+
+.academic-heading-icon--skills {
+  background: var(--academic-plum-soft);
+  color: var(--academic-plum);
+}
+
+.academic-heading-icon--interests {
+  background: var(--academic-gold-soft);
+  color: var(--academic-gold);
 }
 
 .about-tags,
@@ -74,6 +135,27 @@
   }
 }
 
+.about-tags span:nth-child(3n + 1),
+.internship-tags span:nth-child(3n + 1) {
+  border-color: rgba(15, 118, 110, 0.25);
+  background: var(--academic-green-soft);
+  color: var(--academic-green);
+}
+
+.about-tags span:nth-child(3n + 2),
+.internship-tags span:nth-child(3n + 2) {
+  border-color: rgba(49, 87, 164, 0.23);
+  background: var(--academic-blue-soft);
+  color: var(--academic-blue);
+}
+
+.about-tags span:nth-child(3n),
+.internship-tags span:nth-child(3n) {
+  border-color: rgba(154, 107, 22, 0.24);
+  background: var(--academic-gold-soft);
+  color: var(--academic-gold);
+}
+
 .about-tags--skills {
   margin-top: 0.3rem;
 }
@@ -85,11 +167,34 @@
   border-top: 1px solid var(--academic-line);
 
   li {
+    position: relative;
     display: grid;
     grid-template-columns: 4.4rem minmax(0, 1fr);
     gap: 1rem;
-    padding: 0.85rem 0;
+    padding: 0.85rem 0 0.85rem 0.9rem;
     border-bottom: 1px solid var(--academic-line);
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    top: 1.28rem;
+    left: 0;
+    width: 0.36rem;
+    height: 0.36rem;
+    border-radius: 50%;
+    background: var(--academic-green);
+    box-shadow: 0 0 0 4px var(--academic-green-soft);
+  }
+
+  li:nth-child(2n)::before {
+    background: var(--academic-blue);
+    box-shadow: 0 0 0 4px var(--academic-blue-soft);
+  }
+
+  li:nth-child(3n)::before {
+    background: var(--academic-rust);
+    box-shadow: 0 0 0 4px var(--academic-rust-soft);
   }
 
   time {
@@ -114,11 +219,28 @@
 }
 
 .timeline-item {
+  position: relative;
   display: grid;
   grid-template-columns: 8.8rem minmax(0, 1fr);
   gap: 1rem;
-  padding: 0.95rem 0;
+  padding: 0.95rem 0 0.95rem 0.9rem;
   border-top: 1px solid var(--academic-line);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.95rem;
+    left: 0;
+    width: 0.18rem;
+    height: calc(100% - 1.9rem);
+    min-height: 1.6rem;
+    border-radius: 999px;
+    background: var(--academic-blue);
+  }
+
+  &:nth-child(2n)::before {
+    background: var(--academic-green);
+  }
 
   strong,
   span {
@@ -154,6 +276,7 @@
 }
 
 .internship-card {
+  position: relative;
   display: grid;
   grid-template-columns: 4.4rem minmax(0, 1fr);
   gap: 1rem;
@@ -162,7 +285,16 @@
   border-left: 4px solid var(--academic-blue);
   border-radius: 8px;
   background: var(--academic-paper);
-  box-shadow: 0 8px 24px rgba(31, 45, 42, 0.05);
+  box-shadow: 0 10px 28px rgba(31, 45, 42, 0.07);
+  overflow: hidden;
+}
+
+.internship-card::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 0.18rem;
+  background: linear-gradient(90deg, var(--academic-blue), var(--academic-green));
 }
 
 .internship-logo {
@@ -231,19 +363,41 @@
 }
 
 .pub-item {
+  position: relative;
   display: block;
-  padding: 0.95rem 1rem;
+  padding: 1rem 1rem 1rem 1.12rem;
   border: 1px solid var(--academic-line);
   border-left: 4px solid transparent;
   border-radius: 8px;
   background: var(--academic-paper);
   box-shadow: 0 8px 24px rgba(31, 45, 42, 0.045);
+  overflow: hidden;
 
   &:hover {
     border-color: rgba(15, 118, 110, 0.42);
     border-left-color: var(--academic-green);
     transform: translateY(-1px);
   }
+}
+
+.pub-item::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0.25rem;
+  background: var(--academic-blue);
+}
+
+.pub-item:nth-child(2)::before {
+  background: var(--academic-rust);
+}
+
+.pub-item:nth-child(3n)::before {
+  background: var(--academic-green);
+}
+
+.pub-item:nth-child(4n)::before {
+  background: var(--academic-gold);
 }
 
 .pub-title {
@@ -316,10 +470,34 @@
   margin-top: 0.45rem;
 
   div {
+    position: relative;
     padding: 0.95rem;
     border: 1px solid var(--academic-line);
     border-radius: 8px;
     background: var(--academic-soft);
+    overflow: hidden;
+  }
+
+  div::before {
+    content: "";
+    display: block;
+    width: 2.1rem;
+    height: 0.18rem;
+    margin-bottom: 0.65rem;
+    border-radius: 999px;
+    background: var(--academic-green);
+  }
+
+  div:nth-child(2)::before {
+    background: var(--academic-blue);
+  }
+
+  div:nth-child(3)::before {
+    background: var(--academic-plum);
+  }
+
+  div:nth-child(4)::before {
+    background: var(--academic-gold);
   }
 
   strong,
