@@ -138,11 +138,11 @@
       "summary": "Co-first author; Oral."
     },
     {
-      "name": "SAVP: Scene-Aware Vision Token Pruning for Efficient Video Large Language Models",
+      "name": "VISA: Video Skeleton-Aware Efficient Frame Selection for Long Video Understanding",
       "publisher": "EMNLP 2026",
       "releaseDate": "2026",
-      "website": "",
-      "summary": "Co-first author; Poster."
+      "website": "https://openreview.net/forum?id=zO9l3jQQGt",
+      "summary": "Oral."
     },
     {
       "name": "GSTEP: Global Spatio-Temporal Density-Driven Visual Token Pruning for Efficient Video Large Language Models",
@@ -152,10 +152,10 @@
       "summary": "Co-first author; Poster."
     },
     {
-      "name": "LatCom: Latent Compression for Efficient Multi-Agent Collaboration",
+      "name": "LatCom: Cross-Agent Latent Compression for Efficient Multi-Agent Collaboration",
       "publisher": "EMNLP 2026",
       "releaseDate": "2026",
-      "website": "",
+      "website": "https://openreview.net/forum?id=QLEEibF8ts",
       "summary": "Co-first author; Poster."
     }
   ],

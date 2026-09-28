@@ -55,7 +55,9 @@ def main():
         "DisHelis is listed": "DisHelis" in publication_text,
         "HAWK is listed": "HAWK" in publication_text,
         "SpecCache is listed": "SpecCache" in publication_text,
+        "VISA is listed": "VISA" in publication_text,
         "LatCom is listed": "LatCom" in publication_text,
+        "SAVP is removed": "SAVP" not in public_text,
         "non-first-author papers are removed": all(
             title not in publication_text
             for title in ["PhOrch", "Reducing Cross-Pod", "TableQA"]
@@ -69,7 +71,7 @@ def main():
         ),
         "journal papers include SCI ranking": "venue_rank: \"SCI 一区\"" in publication_text
         and "venue_rank: \"SCI 二区\"" in publication_text,
-        "co-first papers are marked": publication_text.count('author_role: "Co-first author"') >= 5,
+        "co-first papers are marked": publication_text.count('author_role: "Co-first author"') >= 4,
         "author role renders bold": "<strong>{{ post.author_role }}</strong>" in read(
             "_includes/archive-single.html"
         )
@@ -156,12 +158,16 @@ def main():
                 "DisHelis: Optimizing Deployment of Disaggregated LLMs Inference Serving",
                 "SpecCache: Speculative KV Cache Reuse for Efficient RAG Serving",
                 "HAWK: Head Importance-Aware Visual Token Pruning in Multimodal Models",
-                "SAVP: Scene-Aware Vision Token Pruning for Efficient Video Large Language Models",
+                "VISA: Video Skeleton-Aware Efficient Frame Selection for Long Video Understanding",
                 "GSTEP: Global Spatio-Temporal Density-Driven Visual Token Pruning",
-                "LatCom: Latent Compression for Efficient Multi-Agent Collaboration",
+                "LatCom: Cross-Agent Latent Compression for Efficient Multi-Agent Collaboration",
                 "FAESR: Fine-Grained Rate Adaptation for Energy-Aware Super Resolution",
             ]
         ),
+        "EMNLP decisions are current": "VISA</strong> accepted by EMNLP 2026 as an <strong>Oral</strong> paper" in about
+        and "LatCom</strong> accepted by EMNLP 2026 as a <strong>Poster</strong> paper" in about
+        and "https://openreview.net/forum?id=zO9l3jQQGt" in public_text
+        and "https://openreview.net/forum?id=QLEEibF8ts" in public_text,
         "requested about tags are removed": all(
             tag not in research_tag_block
             for tag in [

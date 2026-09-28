@@ -32,9 +32,11 @@ I am currently a research intern at **Huawei 2012 Laboratories**, working on **P
 
 <ul class="news-list">
   <li><time>2026</time><span>Joined <strong>Huawei 2012 Laboratories</strong> as a research intern on PTO optimization.</span></li>
+  <li><time>2026</time><span><strong>VISA</strong> accepted by EMNLP 2026 as an <strong>Oral</strong> paper.</span></li>
+  <li><time>2026</time><span><strong>LatCom</strong> accepted by EMNLP 2026 as a <strong>Poster</strong> paper.</span></li>
   <li><time>2026</time><span><strong>SpecCache</strong> accepted by ACL 2026 as an <strong>Oral</strong> paper.</span></li>
   <li><time>2026</time><span><strong>HAWK</strong> accepted by CVPR 2026 as a <strong>Poster</strong> paper.</span></li>
-  <li><time>2026</time><span><strong>SAVP</strong>, <strong>LatCom</strong>, and <strong>GSTEP</strong> accepted by EMNLP 2026 and ACM Multimedia 2026.</span></li>
+  <li><time>2026</time><span><strong>GSTEP</strong> accepted by ACM Multimedia 2026 as a <strong>Poster</strong> paper.</span></li>
   <li><time>2025</time><span><strong>FAESR</strong> published in IEEE TCCN.</span></li>
 </ul>
 
@@ -124,12 +126,12 @@ I am currently a research intern at **Huawei 2012 Laboratories**, working on **P
     </div>
   </a>
 
-  <a class="pub-item" href="/publication/savp">
-    <div class="pub-title">SAVP: Scene-Aware Vision Token Pruning for Efficient Video Large Language Models</div>
-    <div class="pub-authors"><strong>Tao Zhang</strong> · Co-first author</div>
+  <a class="pub-item" href="/publication/visa">
+    <div class="pub-title">VISA: Video Skeleton-Aware Efficient Frame Selection for Long Video Understanding</div>
+    <div class="pub-authors"><strong>Tao Zhang</strong></div>
     <div class="pub-meta">
       <span class="pub-badge">EMNLP 2026</span>
-      <span class="pub-badge pub-badge--poster">Poster</span>
+      <span class="pub-badge pub-badge--oral">Oral</span>
       <span class="pub-dot">2026</span>
     </div>
   </a>
@@ -145,7 +147,7 @@ I am currently a research intern at **Huawei 2012 Laboratories**, working on **P
   </a>
 
   <a class="pub-item" href="/publication/latcom">
-    <div class="pub-title">LatCom: Latent Compression for Efficient Multi-Agent Collaboration</div>
+    <div class="pub-title">LatCom: Cross-Agent Latent Compression for Efficient Multi-Agent Collaboration</div>
     <div class="pub-authors"><strong>Tao Zhang</strong> · Co-first author</div>
     <div class="pub-meta">
       <span class="pub-badge">EMNLP 2026</span>
