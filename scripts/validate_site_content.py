@@ -76,6 +76,9 @@ def main():
             "_includes/archive-single.html"
         )
         and "<strong>{{ post.author_role }}</strong>" in read("_includes/archive-single-cv.html"),
+        "detail pages render standalone paper links": "{% elsif page.paperurl %}" in read(
+            "_layouts/single.html"
+        ),
         "project module is removed": "Selected Projects" not in public_text
         and "\nProjects\n" not in read("_pages/cv.md")
         and "Cloud Security AI Capability" not in public_text
